@@ -1,0 +1,10 @@
+{
+  "extends": ["@tsconfig/node20"],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "lib": ["esnext"],
+    "types": ["@cloudflare/workers-types"]
+  },
+  "include": ["packages/functions", "packages/web"],
+  "exclude": ["dist", "node_modules", ".sst"]
+}
